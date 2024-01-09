@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
+import { BirthComponent } from './birth/birth.component';
 
 const routes: Routes = [
   // Ruta principal con parámetros
-  { path: 'birthday', component: AppComponent },
+  { path: 'birthday/:name', component: BirthComponent },
 
   // Ruta predeterminada (puede redirigir a una página específica si lo deseas)
-  { path: '**', redirectTo: 'birthday' }, //predefinir los textos
+  { path: '**', redirectTo: 'birthday/YourName' }, //predefinir los textos
 ];
 
 @NgModule({
