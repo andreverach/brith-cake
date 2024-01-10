@@ -110,3 +110,46 @@ body {
     font-size: 1.4em;
   }
 }  
+
+
+// contenedor
+
+$color-negro: #000;
+$color-rosa: #ff69b4;
+
+.contenedor {  
+  display: flex;
+justify-content: center;
+}
+.seccion-imagen img {
+  width: 150px;
+}
+
+.seccion-circulos {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column; // Hace que los círculos estén en posición vertical
+  align-items: center; // Centra los círculos horizontalmente en la sección
+}
+
+.circulo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 10px; // Ajusta el espaciado entre círculos según tus necesidades
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.circulo-negro {
+  background-color: $color-negro;
+}
+
+.circulo-rosa {
+  background-color: $color-rosa;
+}
+
+.circulo-negro2 {
+  background-color: $color-negro;
+}
